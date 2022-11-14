@@ -1,0 +1,67 @@
+.widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4%;
+
+    &__left{
+     text-align: left;
+     
+     display: flex;
+     flex-direction: column;
+    // justify-content: space-between;
+        & h1{
+            color: $primary-color;
+            text-align: left;
+            font-size: 3vw;
+            font-weight: 800;
+            line-height: 1.2;
+
+            & span{
+                text-decoration: underline $secondary-color;
+            }
+        }
+        hr{
+            width: 88%;
+            margin-block: 40px;
+            border: 1px solid $secondary-color;
+        }
+        & p{
+            color: $secondary-color;
+            font-size: 1.8vw;
+            font-weight: 600;
+        }
+        ul {
+            li::before{
+                content: url('../images/check.png');
+            }
+
+            
+            li{
+                display: flex;
+                align-items: center;
+                font-size: 1.3vw;
+                gap: 7px;
+                line-height: 2;
+                
+            }
+          }
+          
+         
+    }
+  
+}
+.trading-bg{
+    background-color: $secondary-color;
+    opacity: .5;
+    width: 530px;
+    height: 370px;
+    position: absolute;
+   z-index: -1;
+   border-radius: .4rem;
+   transform: rotate(-5deg);
+}
+.live-rates{
+    display: none;
+}

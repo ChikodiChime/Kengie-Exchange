@@ -1,0 +1,22 @@
+@import 'config';
+@import 'nav';
+@import 'mainSection';
+@import 'converter';
+@import 'cards';
+@import 'rates';
+@import 'testimonials';
+@import 'footer';
+@import 'responsive';
+
+
+*, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // background-color: $primary-color;
+    // color: white;
+    font-family: $main-font;
+}
+header{
+    height: 70px;
+}
