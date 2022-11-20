@@ -17,9 +17,7 @@ main{
     & .hero{
         width: 100%;
         height: auto ;
-        @include flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex-space-around;
         padding: 0 5vw;
         gap: 50px;
 

@@ -1,16 +1,12 @@
 @media only screen and (max-width: 1000px) {
     .hero{
         flex-direction: column;
-        // height: auto !important;
         
-    
     &__left{
-        // margin-top: 100px;
         text-align: center;
 
         & h1{
             font-size: 5vw !important;
-            
         }
 
     }
@@ -21,19 +17,15 @@
 
     .converter-wrapper{
         width: 600px;
-        // margin-top: -100px;
     }
     
     .converter-inputs{
         grid-template-columns: 1fr 1fr;
         column-gap: 5rem;
-    
-    
     }
     .result-wrapper{
         text-align: center;
     }
-
 
     .widget{
         flex-direction: column;
@@ -41,10 +33,9 @@
     
         &__left{
             & h1{
-               
                 font-size: 3vw;
-             
             }
+
             hr{
                 width: 100%;
                 margin-block: 40px;
@@ -69,12 +60,9 @@
         & .logo{
             width:36%;
             padding-block: 5px;
-            
-           
-            
+
            & img{
             width: 90%;
-            
            }
         }
       
@@ -99,6 +87,15 @@
 
             & a{
                 font-size: 20px;
+           
+
+
+                &:hover{
+                    color: white;
+                    text-decoration: underline;
+                    // transform: scale(2);
+                   
+                }
             }
   
         }
@@ -114,10 +111,10 @@
             bottom: 0;
         }
         & :checked ~ .icon-burger .line:nth-child(1){
-            transform: translateY(10px) rotate(225deg);
+            transform: translateY(8.3px) rotate(225deg);
         }
         & :checked ~ .icon-burger .line:nth-child(3){
-            transform: translateY(-10px) rotate(-225deg);
+            transform: translateY(-8.3px) rotate(-225deg);
         }
         & :checked ~ .icon-burger .line:nth-child(2){
             opacity: 0;
@@ -152,12 +149,8 @@
     }
     .hero{
         flex-direction: column;
-      
-        // height: auto !important;
-        
     
     &__left{
-        // margin-top: 100px;
         text-align: center;
 
         & h1{
@@ -172,16 +165,12 @@
 }
     
     .converter-wrapper{
-
         width: 400px;
-        // margin-top: -100px;
     }
     
     .converter-inputs{
         grid-template-columns: 1fr;
         column-gap: 5rem;
-    
-    
     }
 }
 
@@ -190,18 +179,15 @@
         width: 40%;
         padding-block: 5px;
         
-       
-        
        & img{
         width: 100%;
-        
        }
     }
-    .converter-wrapper{
 
+    .converter-wrapper{
         width: 100%;
-        // margin-top: -100px;
     }
+
     .trade-widget{
         display: none;
     }
@@ -212,7 +198,7 @@
     section{
         width: 100%;
         height: auto;
-        padding:1rem;
+        padding: 1rem;
     }
 
     .hero{
@@ -248,12 +234,9 @@
     .navbar .logo{
         width: 50%;
         padding-block: 5px;
-        
-       
-        
+
        & img{
         width: 100%;
-        
        }
     }
    
@@ -271,9 +254,7 @@
         width: 100%;
         
         & .info{
-            
             flex-direction: column;
-            
 
             & .blob{
                 display: none;
@@ -285,8 +266,8 @@
             z-index: -99;
             color: $secondary-color;
             opacity: .5;
-
         }
+        
         .testimonial{
             text-align: center;
             margin-left: 0px;

@@ -2,13 +2,10 @@ footer{
     width: 100%;
     height: auto;
     background-color: $secondary-color;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     padding: 0 40px;
     padding-top: 40px;
-
     gap: 50px;
 
     & .socials{
@@ -23,7 +20,6 @@ footer{
     & .footer__links{
         display: flex;
         justify-content: center;
-        // align-items: center;
         gap: 50px;
 
         .block{
@@ -37,20 +33,17 @@ footer{
             flex-direction: column;
             gap: 15px;
 
-
-
             li {
-            color: white;
-            line-height: 1;
-                a{
-                text-decoration: none;
                 color: white;
-                font-size: 14px;
+                line-height: 1;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 14px;
 
-
-                &:hover{
-                    text-decoration: underline;
-                }
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -60,8 +53,7 @@ footer{
         border-top: 1px solid white;
         width: 100%;
         padding-block: 10px;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         color: white;
     }
 }

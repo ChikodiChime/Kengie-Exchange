@@ -6,17 +6,12 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    @include flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-space-around;
     // padding: 4% 0;
     height: 70px;
     @include transition-ease;
-
-    &.pre-active{
-        backdrop-filter: blur(10px);
-
-    }
+    // backdrop-filter: blur(10px);
+   
     &.active{
       background: url('../images/bg.jpg');
     background-position: center;
@@ -80,11 +75,11 @@
     
 
         & .line{
-            width: 30px;
-            height: 5px;
+            width: 25px;
+            height: 3px;
             background-color: $secondary-color;
             margin: 5px;
-            border-radius: 3px;
+            border-radius: $br4;
             @include transition-ease;
 
 

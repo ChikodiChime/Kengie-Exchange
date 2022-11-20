@@ -3,17 +3,20 @@ $secondary-color: rgb(237, 168, 31);
 $sub-color: rgb(156, 140, 109);
 $main-font:'Nunito', sans-serif;
 $sub-font:'Raleway', sans-serif;
+$br4: .4rem;
 
 @mixin  transition-ease {
     transition: all 0.5s ease-in-out;
-}
-@mixin flex {
-    display: flex;
 }
 @mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@mixin flex-space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 @mixin swiper{
 
