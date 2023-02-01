@@ -1,15 +1,12 @@
 @import 'config';
 
-
 .converter-wrapper{
-    // min-width: 400px;
     width: 400px;
     background-color: $primary-color;
     border-radius: $br4;
     padding: 2rem 2rem;
     box-shadow: 3px 3px 10px $secondary-color;
 }
-
 .converter-inputs{
     display: grid;
     grid-template-columns: 1fr;
@@ -35,9 +32,7 @@
         outline: 0;
         width: 100%;
     }
-
 }
-
 .icon{
     @include flex-center;
     margin-bottom: 0 !important;
@@ -46,7 +41,6 @@
         font-size: 36px;
         color: white;
     }
-
     & button{
         background-color: $secondary-color;
         padding: 10px;
@@ -55,21 +49,17 @@
         outline: 0;
         cursor: pointer;
         @include transition-ease;
-
         &:hover{
         transform: scale(1.1);
+        }
     }
-    }
-    
 }
-
 .hr{
     width: 100%;
     position: relative;
     margin: 15px;
     border-bottom: 1px solid $sub-color;
 }
-
 .result-wrapper{
     font-size: 1.2rem;
 }
@@ -95,7 +85,6 @@
 }
 .select{
    @include flex-center;
-
     & .flag-icon img{
         width: 30px;
     }

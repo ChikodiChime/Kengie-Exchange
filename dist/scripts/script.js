@@ -1,4 +1,3 @@
-
 const fromCurrencyOptions = document.querySelector('.from-currency select')
 const toCurrencyOptions = document.querySelector('.to-currency select')
 const fromAmount = document.querySelector('.from-amount input');
@@ -19,12 +18,7 @@ async function loadCountrySymbols(){
     // console.log(data.rates)
     let symbolList = data.symbols;
     showData(symbolList);
-    
-
-
 }
-
-    
 
 document.addEventListener('DOMContentLoaded', () => {
     loadCountrySymbols();
@@ -35,7 +29,6 @@ function showData(symbols){
     let html = '';
     symbolsOnly.forEach(symbol => {
         html += `<option data-id ='${symbol}'>${symbol}</option>`
-       
     })
 
     const optionList = document.querySelectorAll('select')
@@ -93,11 +86,7 @@ function displayConvertedData(fromCurrency, toCurrency, fromAmt, toAmt){
     console.log(fromCurrency, toCurrency, fromAmt, toAmt)
     fromResult.innerHTML = `${fromAmt.toFixed(2)} ${fromCurrency}`;
     toResult.innerHTML = `${toAmt.toFixed(2)} ${toCurrency}`;
-   
-    
-    
 }
-
 
 //swap or reverse the currency
 swapBtn.addEventListener('click', () => {
@@ -105,8 +94,6 @@ swapBtn.addEventListener('click', () => {
     let toIndex = toCurrencyOptions.selectedIndex;
     fromCurrencyOptions.querySelectorAll('option')[toIndex].selected = 'selected';
     toCurrencyOptions.querySelectorAll('option')[fromIndex].selected = 'selected';
-    
-
     loadFlag(fromCurrencyOptions)
     loadFlag(toCurrencyOptions)
 })

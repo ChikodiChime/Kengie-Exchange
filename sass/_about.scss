@@ -1,0 +1,194 @@
+.about_bg{
+    background: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    &.active{
+        display: none;
+    }
+}
+
+.about_wrapper{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 5%;
+    background-color: rgba($color: rgb(243, 225, 193), $alpha: .5);
+    .title{
+        width: 70%;
+        color: $primary-color;
+        h1{
+            font-size: 2.4rem;
+
+            span{
+                text-decoration: underline $secondary-color;
+            }
+
+        }
+        .subtext{
+            color: $sub-color;
+            font-size: .8rem;
+        }
+    }
+    .flex-wrapper{
+       padding: 0 50px;
+
+       .row{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 1rem;
+
+        .item{
+            
+            text-align: left;
+            position: relative;
+            padding: 0 20px;
+            flex-grow: 1;
+            flex-basis: (100%)/3;
+            .row_icon{
+                background-color: $secondary-color;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                border-radius: 1rem;
+                position: absolute;
+                left: -30px;
+                top: 20px;
+            }
+            .row_title{
+               font-size: 18px; 
+               font-weight: 700;
+               line-height: 50px;
+            }
+            .row_content{
+                font-size: 14px;
+            }
+        }
+       }
+
+    }
+
+    .about_section1{
+        background-color: white !important;
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3cpath d='M-30.642385602054674 323.6164102525673L-69.95566359478383 379.7615898563821 33.91874480730293 410.6589170435684z' fill='rgba(243%2c 225%2c 193%2c 0.3)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M801.4567744464454 230.04673237999572L862.355694090335 360.6448870078722 932.0549290743219 169.14781273610612z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M975.780959398736 538.1954218072203L1102.9473950730257 645.1074188337763 1130.6585474674407 502.5458984959226z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M170.87434361865786 355.6050660625538L235.47583369917555 315.2375748235639 142.6238518004318 238.5190853222823z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M933.405724512639 86.90089270547203L1018.260438670204 70.40680713573175 916.9116389428988 2.0461785479070187z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M293.43707024821055 331.35355147548734L365.76986728571 183.40735902659148 222.00932525695492 190.94152978284484z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M612.7463835001299 302.29733246862145L698.3836123001687 384.9962430264038 695.4452940579123 216.66010366858268z' fill='rgba(243%2c 225%2c 193%2c 0.5)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: auto;
+        margin-block: 100px;
+        .title{
+            width: 100%;
+            h1{
+                color: black ;
+                font-size: 30px !important;
+             }
+        }
+        .item{
+            padding: 0 10px !important;
+            
+            img{
+                width: 100%;
+            }
+            .row_title{
+                text-align: center;
+                font-size: 16px !important;
+            }
+            .role{
+                font-size: 12px;
+                text-align: center;
+                font-weight: 600;
+                background-color: rgb(166, 166, 245);
+                color: rgb(0, 0, 179);
+                padding: 7px 0;
+                border-radius: .4rem;
+                margin-bottom: 10px;
+            }
+            .row_content{
+                font-size: 12px !important;
+                text-align: center;
+                padding-bottom: 10px;
+    
+    
+            }
+            .row_icons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                .fa-brands{
+                    color: $sub-color;
+                    text-align: center;
+                }
+            }
+            
+        }
+        
+    }
+    .about_section2{
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+
+        .left{
+            text-align: left;
+
+            p{
+                color: $sub-color;
+                font-weight: 700;
+            }
+            h1{
+                color: black;
+                font-weight: 900;
+                text-align: left;
+                margin-bottom: 20px;
+
+            }
+            .learn{
+               @include link;
+                
+                i{
+                    @include icon;
+
+                }
+                
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            gap: 50px;
+            .top{
+                position: relative;
+                text-align: left;
+                .number{
+                    font-size: 28px;
+                    font-weight: 900;
+                    color: $secondary-color;
+                    position: absolute;
+                    padding-right: 10px;
+                    left: -80px;
+                }
+                .title{
+                    font-weight: 900;
+                    padding-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+}

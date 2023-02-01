@@ -7,10 +7,9 @@
     width: 100%;
     z-index: 10;
     @include flex-space-around;
-    // padding: 4% 0;
     height: 70px;
     @include transition-ease;
-    // backdrop-filter: blur(10px);
+    
    
     &.active{
       background: url('../images/bg.jpg');
@@ -87,12 +86,12 @@
     }
 
     & .signin{
-        background-color: transparent;
         color: $secondary-color;
         border: 1px solid $secondary-color;
         padding: 8px 25px;
         cursor: pointer;
         text-transform: uppercase;
+        text-decoration: none;
         font-weight: 600;
     }
 

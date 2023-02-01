@@ -2,7 +2,7 @@
    @include flex-center;
     flex-direction: row;
     gap: 4%;
-
+    
     &__left{
      text-align: left;
      display: flex;
@@ -47,6 +47,9 @@
          
     }
   
+}
+.trade-widget{
+    position: relative;
 }
 .trading-bg{
     background-color: $secondary-color;
