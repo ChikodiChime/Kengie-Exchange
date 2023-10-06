@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:#EDA81F;fill-opacity:0.309804}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="63152.65" y="10661.93" width="29937.91" height="19672.42"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="43599.18" y="3330.3" width="50826.81" height="25872.68"/>
+  <path class="fil0" d="M54205.62 29394.35c-830.26,-6257.71 -1595.72,-6269.42 4813.67,-8826.89 4699.51,-1875.2 1639.74,-7051.84 7497.18,-9391.15 6321.93,-2524.82 3549.64,-3502.81 8063.61,-6276.8 876.69,-538.76 1265.85,-1049.34 1977.08,-1760.57"/>
+  <path class="fil1" d="M59029.29 20567.46c-6343.38,2531.13 -5658.94,2568.67 -4839.29,8635.52l40245.99 0 0 -25872.68 -18057.56 0c-598.22,614.04 -992.31,1080.01 -1788.35,1569.21 -4513.97,2773.99 -1741.68,3751.98 -8063.61,6276.8 -5857.44,2339.31 -2797.67,7515.95 -7497.18,9391.15z"/>
+  <g style="clip-path:url(#id0)">
+   <image id="Online_x0020_transactions-pana.png" x="63152.65" y="10661.94" width="29937.91" height="19672.41" xlink:href="send_bg_Images\send_bg_ImgID1.png"/>
+  </g>
+ </g>
+</svg>

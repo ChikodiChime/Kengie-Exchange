@@ -1,0 +1,45 @@
+.bg{
+    background: url('../images/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+main{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-block: 100px;
+
+    & .hero{
+        width: 100%;
+        height: auto ;
+        @include flex-space-around;
+        padding: 0 5vw;
+        gap: 50px;
+
+        &__left h1{
+            font-size: 4vw;
+            font-family: $sub-font;
+
+            & span{
+                font-family: inherit;
+                color: $secondary-color;
+            }
+        }
+        &__left p{
+            color: $sub-color;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+
+        .rate-cards{
+            margin-top: 100px;
+        }
+       
+    }
+}
