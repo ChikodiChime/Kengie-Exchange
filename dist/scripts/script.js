@@ -12,12 +12,13 @@ let rowp = document.querySelector('.rates')
 let div = document.createElement('div');
 div.classList = 'row';
 async function loadCountrySymbols(){
-    const API_URL = 'https://api.exchangerate.host/symbols'
+    const API_URL = 'http://api.exchangerate.host/list?access_key=78c3cc7c86ac9ceb9047a7b10e01fd26'
     const result = await fetch(API_URL);
     const data = await result.json();
-    // console.log(data.rates)
-    let symbolList = data.symbols;
+   
+    let symbolList = data.currencies;
     showData(symbolList);
+  
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,13 +30,17 @@ function showData(symbols){
     let html = '';
     symbolsOnly.forEach(symbol => {
         html += `<option data-id ='${symbol}'>${symbol}</option>`
+      
     })
+    
 
     const optionList = document.querySelectorAll('select')
     for(let i = 0; i<optionList.length; i++){
         optionList[i].addEventListener('change',(e) =>{
             loadFlag(e.target)
+            
         })
+       
     }
 
     fromCurrencyOptions.innerHTML = html;
@@ -47,6 +52,7 @@ function showData(symbols){
         if(option.dataset.id == 'EUR') option.selected = 'selected'
     })
 }
+
 function loadFlag(element){
     for(let code in country_list){
         if(code == element.value){
@@ -66,28 +72,29 @@ fromAmount.addEventListener('keyup', function(){
 convertBtn.addEventListener('click', () => {
     let fromCurrency = fromCurrencyOptions.value
     let toCurrency = toCurrencyOptions.value;
-    // console.log(fromCurrency, toCurrency);
-    let fromAmt = Number(fromAmount.value)
+    let fromAmt = Number(fromAmount.value);
     if(fromAmt) getConvertedData(fromCurrency, toCurrency, fromAmt);
 });
 
 //get converted data from API
-async function getConvertedData(from, to, amount){
-const API_URL = `https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=${amount}`
-const result = await fetch(API_URL);
-const data = await result.json()
-// console.log(data.result)
+async function getConvertedData(from, to, amount) {
+    const API_URL = `http://api.exchangerate.host/convert?access_key=78c3cc7c86ac9ceb9047a7b10e01fd26&from=${from}&to=${to}&amount=${amount}`;
+    const result = await fetch(API_URL);
+    const data = await result.json();
+    const toAmt = parseFloat(data.result);
 
-displayConvertedData(from, to, amount, data.result);
+    if (!isNaN(toAmt)) {
+        displayConvertedData(from, to, amount, toAmt);
+    }
 }
 
-//display the converted result
-function displayConvertedData(fromCurrency, toCurrency, fromAmt, toAmt){
-    console.log(fromCurrency, toCurrency, fromAmt, toAmt)
+function displayConvertedData(fromCurrency, toCurrency, fromAmt, toAmt) {
+    fromAmt = parseFloat(fromAmt); // Ensure fromAmt is a number
+    toAmt = parseFloat(toAmt);     // Ensure toAmt is a number
+
     fromResult.innerHTML = `${fromAmt.toFixed(2)} ${fromCurrency}`;
     toResult.innerHTML = `${toAmt.toFixed(2)} ${toCurrency}`;
 }
-
 //swap or reverse the currency
 swapBtn.addEventListener('click', () => {
     let fromIndex = fromCurrencyOptions.selectedIndex;
