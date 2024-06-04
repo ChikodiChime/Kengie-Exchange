@@ -78,7 +78,7 @@ convertBtn.addEventListener('click', () => {
 
 //get converted data from API
 async function getConvertedData(from, to, amount) {
-    const API_URL = `http://api.exchangerate.host/convert?access_key=78c3cc7c86ac9ceb9047a7b10e01fd26&from=${from}&to=${to}&amount=${amount}`;
+    const API_URL = `https://api.exchangerate.host/convert?access_key=78c3cc7c86ac9ceb9047a7b10e01fd26&from=${from}&to=${to}&amount=${amount}`;
     const result = await fetch(API_URL);
     const data = await result.json();
     const toAmt = parseFloat(data.result);
